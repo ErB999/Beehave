@@ -1,0 +1,16 @@
+path: '/Users/labuser/Desktop/Erwin Bee Tracker/Beehave/data' #dataset root dir
+train: images/train # train images relative to path
+val: images/val # val images relative to path
+
+nc: 3
+
+# 3 points: Head, Thorax, Abdomen (x, y, visibility)
+kpt_shape: [3, 3]
+
+# 1-based indexing: [1, 2] connects Head to Thorax; [2, 3] connects Thorax to Abdomen
+skeleton: [[1, 2], [2, 3]]
+
+names:
+  0: bee
+  1: nest
+  2: entrance
